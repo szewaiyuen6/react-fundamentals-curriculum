@@ -1,13 +1,17 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-require('../index.css');
+var Home = require('./Home');
+var SearchBar = require('./SearchBar');
 
 class App extends React.Component{
 	render(){
 		return (
-			<div>
-			Hello world
-			</div>
+		<div className='container'>
+		<div>
+			<SearchBar />
+		</div>
+			<Home />
+		</div>
 			)
 	}
 
