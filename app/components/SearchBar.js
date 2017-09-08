@@ -6,7 +6,9 @@ class SearchBar extends React.Component {
 		return(
 	
 		<div className='navbar'>
-			will contain a button back to home
+			<a >
+			HOME
+			</a>
 		</div>
 			)
 
