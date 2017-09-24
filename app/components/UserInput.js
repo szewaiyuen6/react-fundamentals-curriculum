@@ -1,6 +1,6 @@
 var React = require('react');
 var api = require('../utils/api');
-
+var PropTypes = require('prop-types');
 
 
 class UserInput extends React.Component {

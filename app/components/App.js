@@ -1,19 +1,23 @@
 var React = require('react');
-var ReactDOM = require('react-dom');
-var Home = require('./Home');
-var SearchBar = require('./SearchBar');
+var ReactRouter = require('react-router-dom');
+var Router = ReactRouter.BrowserRouter;
+var Route = ReactRouter.Route;
+var Switch = ReactRouter.Switch;
+var Main = require('./Main');
+var Forecast = require('./Forecast');
 
 class App extends React.Component{
 	render(){
 		return (
-		<div className='container'>
-		<div>
-			<SearchBar />
-		</div>
-			<Home />
-		</div>
+		<Router>
+			<div className = 'container'>
+				<Switch>
+					<Route exact path = '/' component = {Main} />
+					<Route path = '/forecast' component = {Forecast} />
+				</Switch>
+			</div>
+		</Router>
 			)
 	}
-
 }
 module.exports = App;

@@ -1,5 +1,6 @@
 var React = require('react');
 var UserInput = require('./UserInput');
+var SearchBar = require('./SearchBar');
 
 class Home extends React.Component {
 	render() {
